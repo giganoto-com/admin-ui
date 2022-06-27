@@ -1,0 +1,18 @@
+.App {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.plus-button {
+  width: 180px;
+  background-color: rgb(29, 100, 231);
+  border: 0;
+  color: white;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.plus-button h1 {
+  font-size: 64px;
+}
