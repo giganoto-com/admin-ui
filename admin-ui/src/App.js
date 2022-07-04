@@ -1,12 +1,13 @@
-import './App.css';
+import PropTypes from "prop-types";
+import "./App.css";
 
-function PlusButton(props) {
+function PlusButton({ text }) {
   return (
-      <button className="plus-button">
-        <h1>+</h1>
-        <h2>{props.text}</h2>
-      </button>
-  )
+    <button className="plus-button">
+      <h1>+</h1>
+      <h2>{text}</h2>
+    </button>
+  );
 }
 
 function App() {
@@ -18,5 +19,9 @@ function App() {
     </div>
   );
 }
+
+PlusButton.propTypes = {
+  text: PropTypes.string,
+};
 
 export default App;
